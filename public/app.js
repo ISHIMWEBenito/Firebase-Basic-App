@@ -1,11 +1,26 @@
 ///// User Authentication /////
 
+import firebase from 'firebase/app';
+
 import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
   signOut,
-} from 'https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js';
+} from 'firebase/auth';
+
+import 'firebase/firestore';
+const firebaseConfig = {
+  apiKey: 'AIzaSyBmBZuZiniwzsouVbViS71SYM4ugOGf7kw',
+  authDomain: 'something-unique-2ef3f.firebaseapp.com',
+  projectId: 'something-unique-2ef3f',
+  storageBucket: 'something-unique-2ef3f.appspot.com',
+  messagingSenderId: '705490757954',
+  appId: '1:705490757954:web:b991a9b6615eadf07940db',
+  measurementId: 'G-C4DCC5XB25',
+};
+
+firebase.initializeApp(firebaseConfig);
 
 const whenSignedIn = document.getElementById('whenSignedIn');
 const whenSignedOut = document.getElementById('whenSignedOut');

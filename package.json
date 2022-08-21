@@ -1,0 +1,22 @@
+{
+  "name": "myawesome-app",
+  "version": "1.0.0",
+  "description": "rules_version = '2';\r service cloud.firestore {\r   match /databases/{database}/documents {\r     match /{document=**} {\r       allow read, write: if false\r     }",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benish-31/Firebase-Basic-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benish-31/Firebase-Basic-App/issues"
+  },
+  "homepage": "https://github.com/Benish-31/Firebase-Basic-App#readme",
+  "dependencies": {
+    "firebase": "^9.8.2"
+  }
+}
